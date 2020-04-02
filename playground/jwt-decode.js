@@ -1,0 +1,6 @@
+const jwt=require('jsonwebtoken')
+
+//WE NEED TO PROVIDE THE TOKEN
+const token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTcyZmJlZTQyOTFjMDIzNzQ0ZDI4NzgiLCJ1c2VybmFtZSI6InVzZXIxMyIsImNyZWF0ZWRBdCI6MTU4NDU5MzkyNjgzMSwiaWF0IjoxNTg0NTkzOTI2fQ.aMJwk1Y6wj_GJOxLsmdlFKbSHT1lIbnLTs3Yzy5qzXM'
+
+console.log(jwt.verify(token,'jwt@123'))//SECRET KEY MUST BE THE SAME WHEN WE ARE DECODING THE DATA
